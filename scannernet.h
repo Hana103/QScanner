@@ -8,6 +8,7 @@ class ScannerNet : public QObject
     Q_OBJECT
 public:
     explicit ScannerNet(QObject *parent = nullptr);
+    void doScan(const QString& hostname, int port) const; // scanns 1 port
 
 signals:
 
