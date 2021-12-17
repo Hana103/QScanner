@@ -2,6 +2,9 @@
 #define SCANNERNET_H
 
 #include <QObject>
+#include <QTcpSocket>
+#include <QAbstractSocket>
+#include "ui_scannergui.h"
 
 class ScannerNet : public QObject
 {
@@ -13,6 +16,11 @@ public:
 signals:
 
 public slots:
+
+private:
+
+    QTcpSocket *m_socket;
+
 };
 
 #endif // SCANNERNET_H
